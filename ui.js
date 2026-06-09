@@ -39,7 +39,7 @@ export async function boot() {
 async function fetchAndRenderNodes() {
   try {
     showLoader(true);
-    const res = await fetch("/api/nodes");
+    const res = await fetch("https://supplychain-3d-intelligence.onrender.comhttps://supplychain-3d-intelligence.onrender.com/api/nodes");
     const data = await res.json();
     if (!data.success) throw new Error("API error");
     allNodes = data.nodes;
@@ -56,7 +56,7 @@ async function fetchAndRenderNodes() {
 
 async function fetchNodeMetrics(nodeId) {
   try {
-    const res = await fetch(`/api/nodes/${nodeId}/metrics`);
+    const res = await fetch(`https://supplychain-3d-intelligence.onrender.comhttps://supplychain-3d-intelligence.onrender.com/api/nodes/${nodeId}/metrics`);
     const data = await res.json();
     if (!data.success) throw new Error("Metrics API error");
     return data;

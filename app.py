@@ -1,3 +1,4 @@
+from flask_cors import CORS
 """
 Supply Chain & Retail Intelligence Digital Twin — Backend
 Flask + SQLAlchemy + SQLite

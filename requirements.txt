@@ -5,3 +5,5 @@ sqlalchemy>=2.0.0
 gunicorn
 flask-cors
 flask-cors
+flask-cors
+flask-cors
